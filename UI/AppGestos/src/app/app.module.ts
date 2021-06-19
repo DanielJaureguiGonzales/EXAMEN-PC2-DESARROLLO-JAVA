@@ -15,11 +15,13 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCardModule } from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { GastosAddComponent } from './components/gastos/gastos-add/gastos-add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GastosListComponent
+    GastosListComponent,
+    GastosAddComponent
   ],
   imports: [
     BrowserModule,

@@ -18,7 +18,7 @@
       ${{order.amount + order.amount}}
     </li>
   </ul>
-  <button mat-raised-button color="primary">Registrar un nuevo gasto</button>
+  <button mat-raised-button color="primary" routerLink="/gastosAdd">Registrar un nuevo gasto</button>
   <div class="card" *ngFor="let order of outcomes">
     <mat-card class="example-card">
       <mat-card-header>

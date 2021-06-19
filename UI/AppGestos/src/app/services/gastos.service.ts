@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Item } from '../models/item';
 import { Outcomes } from '../models/outcomes';
 
 @Injectable({
@@ -14,6 +15,10 @@ export class GastosService {
 
   getOrder(){
     return this.http.get<Outcomes[]>(this.URL);
+  }
+
+  saveOrder(order:Item){
+    return this.http.post(this.URL,order);
   }
 
 }
