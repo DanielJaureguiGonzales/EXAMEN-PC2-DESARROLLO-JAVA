@@ -1,0 +1,33 @@
+<div>
+
+
+  <div class="col-lg-4 col-md-6 mb-4"   *ngFor="let order of outcomes" >
+    <div class="card text-center">
+      <div class="card-header">
+
+      </div>
+      <div class="card-body">
+
+        <h5 class="card-title"> {{order.createdAt}}  </h5>
+      </div>
+    </div>
+  </div>
+
+  <ul>
+    <li *ngFor="let order of outcomes" >
+      ${{order.amount + order.amount}}
+    </li>
+  </ul>
+  <button mat-raised-button color="primary">Registrar un nuevo gasto</button>
+  <div class="card" *ngFor="let order of outcomes">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <h4> ${{order.amount}} </h4>
+        <h5 class="card-title"> {{order.detail}}  </h5>
+      </mat-card-header>
+      <mat-card-content>
+        <h5 class="card-title"> {{order.detail}}  </h5>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
